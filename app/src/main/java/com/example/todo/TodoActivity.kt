@@ -104,7 +104,6 @@ class TodoActivity : AppCompatActivity() {
         backButton.visibility = View.GONE
     }
 
-
     private fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         firebaseAuth.signInWithCredential(credential)
@@ -196,6 +195,11 @@ class TodoActivity : AppCompatActivity() {
         }
         // displaying the popup
         popup.show()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finishAffinity()
     }
 
 
