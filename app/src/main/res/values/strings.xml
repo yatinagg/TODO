@@ -1,5 +1,5 @@
 <resources>
     <string name="app_name">TODO</string>
-    <string name="log_in_using_google">Log in Using Google</string>
+    <string name="google_log_in">Google Log in</string>
     <string name="token">501805996853-cavmflaki2h4uhvk1tcckqntbpa1au7r.apps.googleusercontent.com</string>
 </resources>
