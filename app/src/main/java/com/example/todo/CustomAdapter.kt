@@ -7,12 +7,13 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class CustomAdapter(private val mList: List<String>, private var optionsMenuClickListener: OptionsMenuClickListener
+class CustomAdapter(
+    private val mList: List<String>, private var optionsMenuClickListener: OptionsMenuClickListener
 ) :
     RecyclerView.Adapter<CustomAdapter.ViewHolder>() {
 
     // create an interface for onClickListener
-    // so that we can handle data most effectively in MainActivity.kt
+    // so that we can handle data most effectively in LoginPageActivity.kt
     interface OptionsMenuClickListener {
         fun onOptionsMenuClicked(position: Int)
     }
@@ -35,7 +36,7 @@ class CustomAdapter(private val mList: List<String>, private var optionsMenuClic
 
         holder.options.setOnClickListener {
             optionsMenuClickListener.onOptionsMenuClicked(position)
-            Log.d("Adapter","options clicked")
+            Log.d("Adapter", "options clicked")
         }
 
     }

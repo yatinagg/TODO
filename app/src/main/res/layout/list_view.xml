@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="wrap_content"
     android:layout_margin="10dp"
     app:cardElevation="6dp">
 
@@ -19,18 +19,20 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_weight="20"
-            android:text="Item"
-            android:textSize="20sp"
+            android:padding="5dp"
+            android:text="@string/item"
+            android:textSize="12sp"
             android:textStyle="bold" />
+
         <TextView
             android:id="@+id/tv_options"
-            android:layout_width="10dp"
+            android:layout_width="15dp"
             android:textAlignment="textEnd"
             android:clickable="true"
             android:focusable="true"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="&#8942;"
+            android:text="@string/options_symbol"
             android:textAppearance="?android:textAppearanceLarge" />
 
     </LinearLayout>
